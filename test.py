@@ -2,8 +2,8 @@ __author__ = 'phil'
 
 # testing various functions in small form, some 2.x, some 3.x
 
-
-x=15
+input(x)
+#  x=15
 
 if x>20:
     print "high range"
