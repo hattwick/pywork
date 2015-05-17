@@ -15,9 +15,17 @@ else:
 
 # Now we will get some personal information
 
-print('What is your name?')
+print('\nWhat is your name?')
 
 myName = input()
 
-print('Nice to meet you, ' + myName)
+print('\nNice to meet you, ' + myName)
+
+print('The length of your name is:')
+print(len(myName))
+
+print('\nWhat is your age?')
+myAge = input()
+print('You will be ' + str(int(myAge)+1) + ' in a year.')
+
 
