@@ -14,6 +14,7 @@ elif (int(x)>10):
 else:
     print("low range")
 
+
 # Now we will get some personal information
 
 print('\nWhat is your name?')
