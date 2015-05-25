@@ -18,7 +18,7 @@ else:
 # Now we will get some personal information
 
 print('\nWhat is your name?')
-
+myName = ('')
 myName = input()
 
 print('\nNice to meet you, ' + myName)
