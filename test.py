@@ -2,6 +2,7 @@
 # samples and variations copied or inspired by No Starch Press
 # Automate the Boring Stuff with Python
 
+import sys
 
 print('Enter a value to rank high or low?')
 x = input()
@@ -20,6 +21,10 @@ else:
 print('\nWhat is your name?')
 myName = ('')
 myName = input()
+
+if myName == ('Phil'):
+    print('\nPhil detected.  Running sys.exit')
+    sys.exit()
 
 print('\nNice to meet you, ' + myName)
 
