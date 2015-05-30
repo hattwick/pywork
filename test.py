@@ -3,6 +3,8 @@
 # Automate the Boring Stuff with Python
 
 import sys
+import math
+import time
 
 print('Enter a value to rank high or low?')
 x = input()
