@@ -39,3 +39,5 @@ print('You will be ' + str(int(myAge)+1) + ' in a year.')
 
 print()
 print('Finished')
+
+#Prepare for next exercise
