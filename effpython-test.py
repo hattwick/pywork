@@ -1,7 +1,7 @@
 __author__ = 'phil'
 
 # Sample snippets from Harrison and Slatkin books
-# work-in-progress
+# work-in-progress 2015
 
 print('Enter your word')
 word=input()
