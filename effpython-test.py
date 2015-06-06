@@ -31,4 +31,5 @@ def log(message, *values):
         print('%s: %s' % (message,values_str))
 
 log('My numbers are', [1, 2])
-log('Hello', [])
+log('Hello')
+log("Network inventory", *devices)
