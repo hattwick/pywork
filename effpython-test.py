@@ -21,6 +21,14 @@ for device in devices:
 
 print ('done')
 
-# ['router','switch','load_balancer','firewall','WanOptimizer' ]
-# for device in devices:
-#     print (device)
+# Moving into Logs using Variavble Positional Arguments
+
+def log(message, *values):
+    if not values:
+        print(message)
+    else:
+        values_str = ', '.join(str(x) for x in values)
+        print('%s: %s' % (message,values_str))
+
+log('My numbers are', [1, 2])
+log('Hello', [])
