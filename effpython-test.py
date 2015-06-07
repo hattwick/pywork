@@ -33,3 +33,17 @@ def log(message, *values):
 log('My numbers are', [1, 2])
 log('Hello')
 log("Network inventory", *devices)
+
+# Keyword arguments
+
+def remainder(number, divisor):
+    return number % divisor
+assert remainder(20,divisor=7) == 6
+print(remainder)
+
+
+#Adding timestamp to log file
+def log2(message, when=datetime.now()):
+    print('%s: %s' % (when,message))
+
+log2('Test Message')
