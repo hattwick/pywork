@@ -3,6 +3,8 @@ __author__ = 'phil'
 # Sample snippets from Harrison and Slatkin books
 # work-in-progress 2015 ver.8
 
+
+
 print('Enter your word')
 word=input()
 print('Checking for match pattern ...ate')
