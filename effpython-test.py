@@ -14,6 +14,7 @@ if (match<0):
 else:
     print ('match position ', match)
 
+
 print('/n Moving onto file check/n')
 
 devices = ['router','switch','load_balancer','firewall']
@@ -49,3 +50,5 @@ def log2(message, when=datetime.now()):
     print('%s: %s' % (when,message))
 
 log2('Test Message')
+
+#END Eff Python work
