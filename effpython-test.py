@@ -51,9 +51,3 @@ def log2(message, when=datetime.now()):
 
 log2('Test Message')
 
-devices = ['router','switch','load_balancer','firewall']
-
-for device in devices:
-    print(device)
-
-print ('done')
