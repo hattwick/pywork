@@ -49,3 +49,5 @@ def log2(message, when=datetime.now()):
     print('%s: %s' % (when,message))
 
 log2('Test Message')
+
+# Pick up from here
