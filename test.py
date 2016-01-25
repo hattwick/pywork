@@ -5,6 +5,11 @@
 import sys
 import math
 import time
+import pprint
+
+print('Displaying Env and Path Information\n')
+pprint.pprint(sys.path)
+
 
 print('Enter a value to rank high or low?')
 x = input()
