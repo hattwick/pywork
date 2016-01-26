@@ -8,6 +8,8 @@ import time
 import pprint
 
 print('Displaying Env and Path Information\n')
+# One of the most useful things this has done is flush out the python version
+# Adding a statement to capture and log just that.
 pprint.pprint(sys.path)
 
 
@@ -26,7 +28,7 @@ else:
 # Now we will get some personal information
 
 print('\nWhat is your name?')
-myName = ('')
+# myName = ('')       // Test
 myName = input()
 
 if myName == ('Phil'):
