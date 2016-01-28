@@ -12,8 +12,11 @@ print('Displaying Env and Path Information\n')
 # Adding a statement to capture and log just that.
 pprint.pprint(sys.path)
 
+print('\nUnfiltered path\n')
+print(sys.path)
 
-print('Enter a value to rank high or low?')
+
+print('\nEnter a value to rank high or low?')
 x = input()
 #  x=15
 
