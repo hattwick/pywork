@@ -1,8 +1,8 @@
-# Simple JSON transform routine
+# Network JSON transform routine
 # Pull JSON records from a monitoring system
 # Map Sensors of Interest to and transform
 # Output new JSON objects
-# Special thanks to Brian R for assistance at Boston Python Project Night
+#
 
 import json
 import sys
@@ -46,6 +46,7 @@ for sensor in ping['sensors']:
     }
     total += 1
     # print(sensor)
+    print(dashboard_sensor['applicationIdentifier'])
     pprint(dashboard_sensor)
     jsontotal = len(sensor)
     sensortotal = total
