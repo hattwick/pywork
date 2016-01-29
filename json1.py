@@ -6,7 +6,7 @@
 
 import json
 import sys
-import requests
+# import requests
 import logging
 from pprint import pprint
 
