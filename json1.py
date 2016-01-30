@@ -53,7 +53,6 @@ for sensor in ping['sensors']:
     print('Total sensors processed...500 may be the limit??', sensortotal)
 
 # Ping is now a dictionary with my
-
 #  with open('refactored-sensors.json') as json_data:
 #      postform = json.load(json_data)
 #      json_data.close()
