@@ -11,7 +11,7 @@ import logging
 from pprint import pprint
 
 # import file with all JSON objects
-with open('sensortable.json') as json_data:
+with open('sensorabr.json') as json_data:
     ping = json.load(json_data)
 
 app_a_sensors = [
