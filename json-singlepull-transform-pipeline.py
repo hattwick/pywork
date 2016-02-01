@@ -4,10 +4,10 @@
 # 2) Map Sensors of Interest to new preferred format
 # 3) Drop JSON records behind a web service for consuming applications to pick up
 
-importjson
-importsys
-importurllib2
-frompprintimportpprint
+import json
+import sys
+import urllib2
+from pprintimportpprint
 
 #Retrieve and print static sensor
 
