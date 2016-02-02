@@ -20,23 +20,23 @@ sensor=macrosensor['sensordata']
 # Result contained the dictionary we wanted inside of another dictionary.  This extracts the dictionary we want.
 
 print('\nExtract sensor dictionary\n')
-printsensor
+print(sensor)
 
 
 #Modify sensor to new format
 
 dashboard_sensor={
-'applicationIdentifier':sensor['probename'],
-'applicationCodes':[
-sensor['uptime'],
-sensor['downtime'],
-sensor['updownsince']
-],
-'name':sensor['parentdevicename'],
-'status':'PASS'ifsensor['statustext']=='Up'else'ERROR', #CAUTION: This is the critica field that we CHANGE
-'messages':[
-sensor['sensortype'],
-]
+    'applicationIdentifier':sensor['probename'],
+    'applicationCodes':[
+        sensor['uptime'],
+        sensor['downtime'],
+        sensor['updownsince']
+    ],
+    'name':sensor['parentdevicename'],
+    'status':'PASS'ifsensor['statustext']=='Up'else'ERROR', #CAUTION: This is the critica field that we CHANGE
+    'messages':[
+        sensor['sensortype'],
+    ]
 }
 
 # End of sensor processing
