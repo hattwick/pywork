@@ -7,14 +7,14 @@
 import json
 import sys
 import urllib2
-from pprintimportpprint
+from pprint import pprint
 
-#Retrieve and print static sensor
+# Retrieve and print static sensor
 
-print('Test static single-sensor pipleine')
+print('Test static single-sensor pipeline)
 print('\nNative json response:\n')
 macrosensor=json.load(urllib2.urlopen('https://serviceURL'))
-printmacrosensor
+print macrosensor
 sensor=macrosensor['sensordata']
 
 # Result contained the dictionary we wanted inside of another dictionary.  This extracts the dictionary we want.
@@ -23,7 +23,7 @@ print('\nExtract sensor dictionary\n')
 print(sensor)
 
 
-#Modify sensor to new format
+# Modify sensor to new format
 
 dashboard_sensor={
     'applicationIdentifier':sensor['probename'],
@@ -33,7 +33,7 @@ dashboard_sensor={
         sensor['updownsince']
     ],
     'name':sensor['parentdevicename'],
-    'status':'PASS'ifsensor['statustext']=='Up'else'ERROR', #CAUTION: This is the critica field that we CHANGE
+    'status':'PASS'if sensor['statustext']=='Up'else'ERROR',
     'messages':[
         sensor['sensortype'],
     ]
