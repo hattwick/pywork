@@ -6,6 +6,7 @@
 
 import json
 import sys
+# import request   ... will be added to test urllib vs. request library
 import urllib2
 from pprint import pprint
 
@@ -54,6 +55,7 @@ with open('%s.json' %filetag, 'wb') as json_data:
 
 print('\nPosted json file:')
 print(filetag)
+
 
 
 # -30-
