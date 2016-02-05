@@ -14,3 +14,21 @@ print('\nFloat addition with decimal library\n')
 
 getcontext().prec = 1
 print(a+b)
+
+
+# methods for data
+
+# method for calculating volume
+def vol(rad):
+    return(4.0/3)*(3.14)*(rad**3)
+
+def inrange(num,low,high):
+    if num in range(low,high):
+        print " %s is within the requested range" %str(num)
+    else:
+        print "The number is outside of the range."
+
+# or just boolean check in range
+
+def inrangeboolean(num,low,high):
+    return num in range(low,high)
