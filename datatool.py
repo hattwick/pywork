@@ -32,3 +32,18 @@ def inrange(num,low,high):
 
 def inrangeboolean(num,low,high):
     return num in range(low,high)
+
+
+def parseresults(s):
+    d={"upper":0, "lower":0}
+    for c in s:
+        if c.isupper():
+            d["upper"]+=1
+        elif c.islower():
+            d["lower"]+=1
+        else:
+            pass
+
+    print "Original string: ", s
+    print "Uppercase characters: ", d["upper"]
+    print "Lowercase characters: ", d["lower"]
