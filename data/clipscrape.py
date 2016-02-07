@@ -1,5 +1,6 @@
 #! python3
 # Python3 utility to take clipboard contents and extract contact information
+# exercise from Automate the Boring Stuff with Python
 
 import re
 import pyperclip
@@ -37,8 +38,17 @@ pyperclip.paste()
 phonenumbers = phonepattern.findall(text)
 emailaddresses = emailpattern.findall(text)
 
-print(phonenumbers)
+allPhoneNumbers =[]
+for phonenumber in phonenumbers:
+	allPhoneNumbers.append(phonenumber[0])
+
+print(allPhoneNumbers)
 print(emailaddresses)
 
 
 # copy the contact information back to clipboard
+
+results = '\n'.join(allPhoneNumbers) +  '\n' + '\n'.join(emailaddresses)
+pyperclip.copy(results)
+
+# -30-
