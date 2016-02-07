@@ -7,8 +7,17 @@ import pyperclip
 
 
 # TODO phone number regex
-re.compile(r'''
-)
+phonepattern=re.compile(r'''
+(\d\d\d) | (\(\d\d\d\))) ?    # optional area code
+(\s|-)                        # separator
+\d\d\d                        # first 3 digits
+-                             # separator
+\d\d\d\d                      # last 4 digits
+((ext(\.)?\s |x)              # word extension optional
+(\d{2,4}))?                   # extension optional
+''', re.VERBOSE)
+
+
 
 # TODO email regex
 
