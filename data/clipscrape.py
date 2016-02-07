@@ -6,7 +6,8 @@ import pyperclip
 
 
 
-# TODO phone number regex
+# phone number pattern. using the verbose method to make it more readable
+
 phonepattern=re.compile(r'''
 (\d\d\d) | (\(\d\d\d\))) ?    # optional area code
 (\s|-)                        # separator
@@ -18,12 +19,24 @@ phonepattern=re.compile(r'''
 ''', re.VERBOSE)
 
 
+# email regex
 
-# TODO email regex
+emailpattern = re.compile(r'''
+[a-zA-Z0-9_.+]+     # name
+@
+[a-zA-Z0-9_.+]+     # domain
+''', re.VERBOSE)
 
 
 # import the clipboard
+pyperclip.paste()
 
 # extract contact information
+phonenumbers = phonepattern.findall(text)
+emailaddresses = emailpattern.findall(text)
+
+print(phonenumbers)
+print(emailaddresses)
+
 
 # copy the contact information back to clipboard
