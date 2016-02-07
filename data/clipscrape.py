@@ -9,6 +9,7 @@ import pyperclip
 # phone number pattern. using the verbose method to make it more readable
 
 phonepattern=re.compile(r'''
+(
 (\d\d\d) | (\(\d\d\d\))) ?    # optional area code
 (\s|-)                        # separator
 \d\d\d                        # first 3 digits
@@ -16,6 +17,7 @@ phonepattern=re.compile(r'''
 \d\d\d\d                      # last 4 digits
 ((ext(\.)?\s |x)              # word extension optional
 (\d{2,4}))?                   # extension optional
+)
 ''', re.VERBOSE)
 
 
