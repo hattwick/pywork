@@ -2,14 +2,14 @@
 # Includes techniques discussed in several volumes:
 # "Data Wrangling with Python"
 
-a=(.1)
-b=(.204)
+from decimal import getcontext, Decimal
+
+a = (.1)
+b = (.204)
 
 print('Raw float addition without decimal library\n')
 print(a+b)
 
-
-from decimal import getcontext, Decimal
 print('\nFloat addition with decimal library\n')
 
 getcontext().prec = 1
