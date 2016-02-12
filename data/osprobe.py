@@ -11,3 +11,4 @@ for folderName, subfolders, filenames in os.walk(cwd):
 	print('The files ins ' + folderName + ' are: ' + str(filenames))
 	print()
 
+# -30-
