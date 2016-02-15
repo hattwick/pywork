@@ -22,25 +22,27 @@ print(a+b)
 def vol(rad):
     return(4.0/3)*(3.14)*(rad**3)
 
-def inrange(num,low,high):
-    if num in range(low,high):
-        print " %s is within the requested range" %str(num)
+
+def inrange(num, low, high):
+    if num in range(low, high):
+        print " %s is within the requested range" % str(num)
     else:
         print "The number is outside of the range."
 
 # or just boolean check in range
 
-def inrangeboolean(num,low,high):
-    return num in range(low,high)
+
+def inrangeboolean(num, low, high):
+    return num in range(low, high)
 
 
 def parseresults(s):
-    d={"upper":0, "lower":0}
+    d={"upper": 0, "lower": 0}
     for c in s:
         if c.isupper():
-            d["upper"]+=1
+            d["upper"] += 1
         elif c.islower():
-            d["lower"]+=1
+            d["lower"] += 1
         else:
             pass
 
