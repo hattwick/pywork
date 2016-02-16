@@ -4,8 +4,8 @@
 
 from decimal import getcontext, Decimal
 
-a = (.1)
-b = (.204)
+a = .1
+b = .204
 
 print('Raw float addition without decimal library\n')
 print(a+b)
