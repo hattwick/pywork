@@ -24,6 +24,6 @@ coordinate2 = (8,10)
 
 li = Line(coordinate1, coordinate2)
 
-print (li.distance())
+print 'Distance between ', coordinate1, ' and ', coordinate2, ' is ', li.distance()
 
 # -30-
