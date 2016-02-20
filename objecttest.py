@@ -26,4 +26,8 @@ li = Line(coordinate1, coordinate2)
 
 print 'Distance between ', coordinate1, ' and ', coordinate2, ' is ', li.distance()
 
+rounded = int(li.distance())
+
+print rounded
+
 # -30-
