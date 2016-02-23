@@ -59,7 +59,6 @@ for sensor in ping['sensors']:
 
 
 
-
 #print('inboundjson')
 #print(ping)
 #print('\nMaps to new json')
