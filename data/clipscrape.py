@@ -3,13 +3,13 @@
 # exercise from Automate the Boring Stuff with Python
 
 import re
+# noinspection PyUnresolvedReferences
 import pyperclip
-
 
 
 # phone number pattern. using the verbose method to make it more readable
 
-phonepattern=re.compile(r'''
+phonepattern = re.compile(r'''
 (
 (\d\d\d) | (\(\d\d\d\))) ?    # optional area code
 (\s|-)                        # separator
@@ -38,7 +38,7 @@ pyperclip.paste()
 phonenumbers = phonepattern.findall(text)
 emailaddresses = emailpattern.findall(text)
 
-allPhoneNumbers =[]
+allPhoneNumbers = []
 for phonenumber in phonenumbers:
 	allPhoneNumbers.append(phonenumber[0])
 
@@ -48,7 +48,7 @@ print(emailaddresses)
 
 # copy the contact information back to clipboard
 
-results = '\n'.join(allPhoneNumbers) +  '\n' + '\n'.join(emailaddresses)
+results = '\n'.join(allPhoneNumbers) + '\n' + '\n'.join(emailaddresses)
 pyperclip.copy(results)
 
 # -30-
