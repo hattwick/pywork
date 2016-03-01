@@ -2,10 +2,8 @@
 # samples and variations copied or inspired by No Starch Press
 # Automate the Boring Stuff with Python
 
-import sys
-import math
-import time
 import pprint
+import sys
 
 print('Displaying Env and Path Information\n')
 # One of the most useful things this has done is flush out the python version
@@ -20,9 +18,9 @@ print('\nEnter a value to rank high or low?')
 x = input()
 #  x=15
 
-if (int(x)>20):
+if int(x) > 20:
     print("high range")
-elif (int(x)>10):
+elif int(x) > 10:
     print("moderate range")
 else:
     print("low range")
@@ -34,7 +32,7 @@ print('\nWhat is your name?')
 # myName = ('')       // Test
 myName = input()
 
-if myName == ('Phil'):
+if myName == 'Phil':
     print('\nPhil detected.  Running sys.exit')
     sys.exit()
 
@@ -50,5 +48,5 @@ print('You will be ' + str(int(myAge)+1) + ' in a year.')
 print()
 print('Finished')
 
-#Prepare for next exercise
+# Prepare for next exercise
 
