@@ -20,7 +20,7 @@ print(a+b)
 
 # method for calculating volume
 def vol(rad):
-    return(4.0/3)*(3.14)*(rad**3)
+    return(4.0/3)*3.14*(rad**3)
 
 
 def inrange(num, low, high):
@@ -37,7 +37,7 @@ def inrangeboolean(num, low, high):
 
 
 def parseresults(s):
-    d={"upper": 0, "lower": 0}
+    d = {"upper": 0, "lower": 0}
     for c in s:
         if c.isupper():
             d["upper"] += 1
