@@ -40,7 +40,7 @@ for sensor in ping['sensors']:
         ],
         'name': sensor['sensor'],
         'status': 'OK' if sensor['status'] == 'Up' else 'ERROR',
-         'messages': [
+        'messages': [
              sensor['lastvalue'],
         ]
     }
@@ -57,10 +57,10 @@ for sensor in ping['sensors']:
 #      postform = json.load(json_data)
 #      json_data.close()
 
-#print('inboundjson')
-#print(ping)
-#print('\nMaps to new json')
+# print('inboundjson')
+# print(ping)
+# print('\nMaps to new json')
 #  print(postform)
 
-#x=type(ping)
-#print('Type of loaded JSON objects is',x)
+# x=type(ping)
+# print('Type of loaded JSON objects is',x)
