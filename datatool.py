@@ -24,6 +24,7 @@ def vol(rad):
 
 
 def inrange(num, low, high):
+    "Determine whether number is in the desired range"
     if num in range(low, high):
         print " %s is within the requested range" % str(num)
     else:
@@ -37,6 +38,7 @@ def inrangeboolean(num, low, high):
 
 
 def parseresults(s):
+    "Count the quantity of Upper and lowercase characters"
     d = {"upper": 0, "lower": 0}
     for c in s:
         if c.isupper():
