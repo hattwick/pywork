@@ -20,6 +20,7 @@ print(a+b)
 
 # method for calculating volume
 def vol(rad):
+    "Calculate the volume"
     return(4.0/3)*3.14*(rad**3)
 
 
