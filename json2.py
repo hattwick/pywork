@@ -56,7 +56,6 @@ for sensor in ping['sensors']:
 #  with open('refactored-sensors.json') as json_data:
 #      postform = json.load(json_data)
 #      json_data.close()
-
 # print('inboundjson')
 # print(ping)
 # print('\nMaps to new json')
