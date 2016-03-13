@@ -29,6 +29,7 @@ else:
 # Now we will get some personal information
 
 print('\nWhat is your name?')
+
 # myName = ('')       // Test
 myName = input()
 
