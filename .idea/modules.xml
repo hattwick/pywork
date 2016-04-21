@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../flask/.idea/flask.iml" filepath="$PROJECT_DIR$/../flask/.idea/flask.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../flask1/.idea/flask1.iml" filepath="$PROJECT_DIR$/../flask1/.idea/flask1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pywork.iml" filepath="$PROJECT_DIR$/.idea/pywork.iml" />
     </modules>
   </component>
