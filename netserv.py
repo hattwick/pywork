@@ -15,6 +15,7 @@ sock.listen(5)
 
 client, addr = sock.accept()
 data = client.recv(size)
+
 if data:
 	f = open("inboundstorage.dat", 'w')  # save received data to file
 	print(addr[0], ' has connected')
