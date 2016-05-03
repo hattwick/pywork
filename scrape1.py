@@ -11,4 +11,4 @@ print(html.read())
 
 print('//////')
 bsObj = BeautifulSoup(html.read())
-print(bsObj.h1)
+print(bsObj.html.h1)
