@@ -16,10 +16,10 @@ def gettitle(url):
 		return None
 	try:
 		bsObj = BeautifulSoup(html.read())
-		title = bsObj.body.h1
+		title1 = bsObj.body.h1
 	except AttributeError as e:
 		return None
-	return title
+	return title1
 
 title = gettitle("http://www.pythonscraping.com/pages/page1.html")
 if title is None:
