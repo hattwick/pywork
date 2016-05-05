@@ -9,7 +9,7 @@ from urllib.error import URLError
 from bs4 import BeautifulSoup
 
 
-def getTitle(url):
+def gettitle(url):
 	try:
 		html = urlopen(url)
 	except HTTPError as e:
@@ -21,8 +21,9 @@ def getTitle(url):
 		return None
 	return title
 
-title = getTitle("http://www.pythonscraping.com/pages/page1.html")
+title = gettitle("http://www.pythonscraping.com/pages/page1.html")
 if title is None:
 	print("Title not found")
 else:
 	print(title)
+
