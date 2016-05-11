@@ -1,7 +1,7 @@
 # scraping example modified from "Web Scraping with Python"
 # written for Python3
 
-from urllib.request import urlopen
+import urllib.request
 from bs4 import BeautifulSoup
 
 html = urlopen("http://www.pythonscraping.com/pages/page3.html")
