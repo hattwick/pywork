@@ -12,7 +12,7 @@ def getTitle(url):
 	except HTTPError as e:
 		return None
 	try:
-		bsObj = BeautifulSoup(html.read())
+		bsObj = BeautifulSoup(html.read(), 'html.parser')
 		title = bsObj.body.h1
 	except AttributeError as e:
 		return None
@@ -31,6 +31,6 @@ else:
 	print(html.read())
 
 print('//////')
-bsObj = BeautifulSoup(html.read())
+bsObj = BeautifulSoup(html.read(), 'html.parser')
 print(bsObj.h1)
 
