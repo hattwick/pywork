@@ -28,8 +28,9 @@ except HTTPError as e:
 except URLError as e:
 	print("Server not found.")
 else:
-	print(html.read())
+	print("All conditions passed")
 
 print('//////')
 bsObj = BeautifulSoup(html.read(), 'html.parser')
 print(bsObj.h1)
+
