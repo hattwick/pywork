@@ -33,4 +33,3 @@ else:
 print('//////')
 bsObj = BeautifulSoup(html.read(), 'html.parser')
 print(bsObj.h1)
-
