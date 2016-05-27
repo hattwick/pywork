@@ -25,4 +25,3 @@ if title is None:
 	print("Title not found")
 else:
 	print(title)
-
