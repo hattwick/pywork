@@ -1,7 +1,7 @@
 # scraping example modified from "Web Scraping with Python"
 # written for Python3
 
-from request import urlopen
+import request
 from urllib.error import HTTPError
 from urllib.error import URLError
 from bs4 import BeautifulSoup
