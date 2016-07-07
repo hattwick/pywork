@@ -17,8 +17,9 @@ print('\nVENDORS - print just the last member (syntax disappears)\n')
 print(vendors[-1])
 
 
-# sort and then print
+# sort and then print along with total count
 
 vendors.sort()
 print('\nVENDORS - default sort\n')
 print(vendors)
+print('Total Count: ',len(vendors))
