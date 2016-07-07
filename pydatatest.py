@@ -5,6 +5,8 @@ vendors = ['Juniper', 'Cisco', 'Arista', 'Citrix', 'NGINX', 'Timetra']
 
 switches = ['N5K', 'N9K', 'N7K','N3K', '4507','6500','7050X']
 
+# Various list print methods
+
 print('\nVENDORS - no list manipulation\n')
 print(vendors)
 
@@ -13,3 +15,10 @@ print(vendors[0:])
 
 print('\nVENDORS - print just the last member (syntax disappears)\n')
 print(vendors[-1])
+
+
+# sort and then print
+
+vendors.sort()
+print('\nVENDORS - default sort\n')
+print(vendors)
