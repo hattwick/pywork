@@ -17,8 +17,10 @@ print('\nVENDORS - print just the last member (syntax disappears)\n')
 print(vendors[-1])
 
 # Iterating the list removes syntax and prints each item on separate line
+print('\nVENDORS - Iterate the list (once with and without .title\n')
 for vendor in vendors:
 	print(vendor)
+	print(vendor.title())
 
 
 # sort and then print along with total count
