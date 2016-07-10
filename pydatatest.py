@@ -29,3 +29,12 @@ vendors.sort()
 print('\nVENDORS - default sort\n')
 print(vendors)
 print('Total Count: ',len(vendors))
+
+
+# print a value range
+
+sum=0
+for value in range(1,5):
+	print(value)
+	sum=sum+value
+print('Total ',sum)
