@@ -38,4 +38,6 @@ sum=0
 for value in range(1,5):
 	print(value)
 	sum=sum+value
-print('\nTotal ',sum),'\n'
+
+print('\nTotal ')
+print(sum)
