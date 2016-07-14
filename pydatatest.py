@@ -30,6 +30,9 @@ print('\nVENDORS - default sort\n')
 print(vendors)
 print('Total Count: ',len(vendors))
 
+# copy list for future mutation
+vendorcopy = vendors[:]
+
 
 # print a value range
 
