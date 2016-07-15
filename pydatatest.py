@@ -33,6 +33,11 @@ print('Total Count: ',len(vendors))
 # copy list for future mutation
 vendorcopy = vendors[:]
 
+# now validate the copy
+print('\nVENDORS - copy default sort\n')
+print(vendorcopy)
+
+
 
 # print a value range
 
@@ -44,4 +49,5 @@ for value in range(1,5):
 
 print('\nTotal ')
 print(sum)
+
 
