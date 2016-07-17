@@ -45,6 +45,11 @@ print('\nPrinting values\n\n')
 sum=0
 for value in range(1,5):
 	print(value)
+	if value == 'Cisco':
+		print("******************************found cisco")
+		break
+	else:
+		continue
 	sum=sum+value
 
 print('\nTotal ')
