@@ -21,6 +21,8 @@ print('\nVENDORS - Iterate the list (once with and without .title\n')
 for vendor in vendors:
 	print(vendor)
 	print(vendor.title())
+if 'Cisco' not in vendors:
+	print('Cisco is missing.  Invalid list.')
 
 
 # sort and then print along with total count
