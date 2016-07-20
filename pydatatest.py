@@ -52,3 +52,5 @@ for value in range(1,5):
 print('\nTotal ')
 print(sum)
 
+# Now move to a vendor-product dictionary
+
