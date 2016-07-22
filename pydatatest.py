@@ -54,4 +54,14 @@ print(sum)
 
 # Now move to a vendor-product dictionary
 
+cisco_models = {
+	'Nexus': 'Data Center Router',
+	'Catalyst': 'Campus Router',
+	'ASR': 'Edge Router',
+}
 
+print('\nPrinting Cisco Categories\n')
+
+for key, value in cisco_models.items():
+	print('\nBrand: ' + key)
+	print(' Line ' + value)
