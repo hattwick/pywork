@@ -60,6 +60,7 @@ cisco_models = {
 	'ASR': 'Edge Router',
 }
 
+
 print('\nPrinting Cisco Categories\n')
 
 for key, value in cisco_models.items():
