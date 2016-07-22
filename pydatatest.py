@@ -54,4 +54,3 @@ print(sum)
 
 # Now move to a vendor-product dictionary
 
-vendordict
