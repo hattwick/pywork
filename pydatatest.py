@@ -64,4 +64,4 @@ cisco_models = {
 print('\nPrinting Cisco Categories\n')
 
 for key, value in cisco_models.items():
-	print('\nBrand: ' + key + ' Line: ' + value)
+	print('\n' + key + ' Line: ' + value)
