@@ -30,10 +30,9 @@ if 'Cisco' not in vendors:
 # sort and then print along with total count
 
 vendors.sort()
-# currentTime = datetime.datetime.now()
-# time = currentTime.time()
+currentTime = datetime.now()
 print('\nVENDORS - default sort\n')
-# print(time)
+print(currentTime)
 print(vendors)
 print('Total Count: ',len(vendors))
 
