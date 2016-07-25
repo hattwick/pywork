@@ -1,6 +1,8 @@
 # Test of router list and element manipulation
 # Using Python3
 
+from datetime import datetime
+
 vendors = ['Juniper', 'Cisco', 'Arista', 'Citrix', 'NGINX', 'Timetra']
 
 switches = ['N5K', 'N9K', 'N7K','N3K', '4507','6500','7050X']
@@ -29,6 +31,7 @@ if 'Cisco' not in vendors:
 
 vendors.sort()
 print('\nVENDORS - default sort\n')
+print(time.ctime())
 print(vendors)
 print('Total Count: ',len(vendors))
 
