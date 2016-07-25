@@ -34,7 +34,7 @@ currentTime = datetime.now()
 print('\nVENDORS - default sort\n')
 print(currentTime)
 print(vendors)
-print('Total Count: ',len(vendors))
+print('\nTotal Count: ',len(vendors))
 
 # copy list for future mutation
 vendorcopy = vendors[:]
