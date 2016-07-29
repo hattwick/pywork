@@ -3,7 +3,7 @@
 
 from datetime import datetime
 
-vendors = ['Juniper', 'Cisco', 'Arista', 'Citrix', 'NGINX', 'Timetra']
+vendors = ['juniper', 'cisco', 'arista', 'citrix', 'NGINX', 'timetra']
 
 switches = ['N5K', 'N9K', 'N7K','N3K', '4507','6500','7050X']
 
