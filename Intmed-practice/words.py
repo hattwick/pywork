@@ -14,3 +14,4 @@ scores = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
 
 print(wordlist)
 
+# -30-
