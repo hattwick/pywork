@@ -19,7 +19,7 @@ scores = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
           "x": 8, "z": 10}
 
 currtime = datetime.now()
-print('Current Time: ', currtime.strftime('%x %X'))
+print('Current Time: ', format(currtime.strftime('%x %X')))
 print('Environment: ', os.name)
 print('\nWORDLIST\n')
 print(wordlist)
