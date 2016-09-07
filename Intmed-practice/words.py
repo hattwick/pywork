@@ -4,6 +4,7 @@ from datetime import datetime
 from datetime import date
 from datetime import time
 from datetime import timedelta
+import os
 
 WORD_LIST = "sowpods.txt"
 wordlist = open(WORD_LIST).readlines()
@@ -19,7 +20,7 @@ scores = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
 
 currtime = datetime.now()
 print('Current Time: ', currtime.strftime('%x %X'))
-
+print('Environment: ', os.name)
 print('\nWORDLIST\n')
 print(wordlist)
 print('\nSCORES\n')
