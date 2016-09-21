@@ -29,5 +29,6 @@ print('\nWORDLIST\n')
 print(wordlist)
 print('\nSCORES\n')
 print(scores)
+print('<eof>')
 
 # -30-
