@@ -24,7 +24,7 @@ print('Current Time: ', format(currtime.strftime('%x %X')))
 print('Environment: ', os.name, sys.version_info)
 
 
-#Print words and letter counts
+# Print words and letter counts
 print('\nWORDLIST\n')
 print(wordlist)
 print('\nSCORES\n')
