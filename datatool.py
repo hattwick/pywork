@@ -12,7 +12,7 @@ print(a+b)
 
 print('\nFloat addition with decimal library\n')
 
-getcontext().prec = 1
+getcontext().prec = 2     # changing precision does not modify this outcome
 print(a+b)
 
 
