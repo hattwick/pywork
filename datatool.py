@@ -7,10 +7,10 @@ from decimal import getcontext, Decimal
 a = .1
 b = .204
 
-print('Raw float addition without decimal library\n')
+print('\nRaw float addition without decimal library')
 print(a+b)
 
-print('\nFloat addition with decimal library\n')
+print('\nFloat addition with decimal library')
 
 getcontext().prec = 2     # changing precision does not modify this outcome
 print(a+b)
