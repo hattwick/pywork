@@ -52,3 +52,4 @@ def parseresults(s):
     print "Original string: ", s
     print "Uppercase characters: ", d["upper"]
     print "Lowercase characters: ", d["lower"]
+
