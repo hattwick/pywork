@@ -42,7 +42,7 @@ for p in players:
         p.count += 1
 
 def prompt():
-    choice = raw_input("It's your turn. What will you do? \n LAND SUMMON ATTACK DONE\n")
+    choice = input("It's your turn. What will you do? \n LAND SUMMON ATTACK DONE\n")
     if choice.upper() == "LAND":
         playland()
     elif choice.upper() == "SUMMON":
@@ -84,7 +84,7 @@ def playland():
 def summon():
     mhand = [x for x in p1.hand if x != "l"]
     print("Monsters: "), mhand
-    mchoice = raw_input("Which monster would you like to summon?\n")
+    mchoice = input("Which monster would you like to summon?\n")
     if str(mchoice) in mhand:
         if int(mchoice) <= p1.mana:
             y = p1.hand.index(mchoice)
@@ -92,7 +92,7 @@ def summon():
             p1.field.append(z)
             p1.blockers.append(z)
             p1.mana = p1.mana - int(mchoice)
-            print(p1.field
+            print(p1.field)
             print("Mana Left: "), p1.mana
             prompt()
         else:
@@ -163,7 +163,7 @@ def attack():
         print("Your Attackers: "), p1.blockers
         print("OP's Blockers: "), p2.blockers
         global atk
-        atk = raw_input("Which creature would you like to attack with?\n")
+        atk = input("Which creature would you like to attack with?\n")
         if str(atk) in p1.blockers:
             block()
             y = p1.blockers.index(atk)
@@ -180,7 +180,7 @@ def attack():
             prompt()
 
 def secatkchoice():
-    choice = raw_input("Would you like to attack with another monster?\nY or N\n")
+    choice = input("Would you like to attack with another monster?\nY or N\n")
     if choice.upper() == "Y":
         attack()
     elif choice.upper() == "N":
@@ -204,10 +204,10 @@ def whoblocks():
             else:
                 x = x + 1
         else:
-            choice = raw_input("Will you block? Y or N\n")
+            choice = input("Will you block? Y or N\n")
             if choice.upper() == "Y":
-                print(p1.blockers
-                y = raw_input("Who will you block with?\n")
+                print(p1.blockers)
+                y = input("Who will you block with?\n")
                 if y in p1.blockers:
                     if y > p2.blockers[x]:
                         z = p2.field.index(p2.blockers[x])
@@ -264,7 +264,7 @@ def opland():
             y = p2.hand.pop(x)
             p2.lands.append(y)
             p2.mana = len(p2.lands)
-            print("OP has "), p2.mana, " lands")
+            print("OP has ", p2.mana, " lands")
             break
         else:
             x+=1
