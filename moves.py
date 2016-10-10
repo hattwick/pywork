@@ -70,4 +70,7 @@ def secatkchoice():
         print "That's not a thing..."
         secatkchoice()
 
+def main():
+	print('Main from Moves has been executed.  How did that happen?')
+
 if __name__ == "__main__": main()
