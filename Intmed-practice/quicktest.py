@@ -12,4 +12,3 @@ def increaser(x):
 print("Mana at start:", format(mana))
 newmana = increaser(mana)
 print("Mana after increaser function:", format(newmana))
-
