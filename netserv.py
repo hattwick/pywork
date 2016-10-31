@@ -2,6 +2,7 @@
 # 2016
 
 import socket
+import os
 
 size = 1500
 host = ''
