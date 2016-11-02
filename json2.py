@@ -65,3 +65,4 @@ for sensor in ping['sensors']:
 # print('Type of loaded JSON objects is',x)
 
 # -30-
+
