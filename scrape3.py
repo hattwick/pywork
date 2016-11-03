@@ -6,6 +6,7 @@ from urllib.error import HTTPError
 from urllib.error import URLError
 from bs4 import BeautifulSoup
 
+
 def getTitle(url):
 	try:
 		html = urlopen(url)
@@ -17,6 +18,7 @@ def getTitle(url):
 	except AttributeError as e:
 		return None
 	return title
+
 
 title = getTitle("http://www.pythonscraping.com/pages/page1.html")
 
@@ -33,4 +35,3 @@ else:
 print('//////')
 bsObj = BeautifulSoup(html.read(), 'html.parser')
 print(bsObj.h1)
-
