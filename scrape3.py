@@ -2,8 +2,8 @@
 # written for Python3
 
 import request
-from urllib.error import HTTPError
-from urllib.error import URLError
+from urllib2 import HTTPError
+from urllib2 import URLError
 from bs4 import BeautifulSoup
 
 
