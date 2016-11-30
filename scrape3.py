@@ -19,7 +19,6 @@ def getTitle(url):
 		return None
 	return title
 
-
 title = getTitle("http://www.pythonscraping.com/pages/page1.html")
 
 # First account for http and url errors
