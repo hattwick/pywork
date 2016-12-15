@@ -2,6 +2,8 @@
 # Using Python3
 
 from datetime import datetime
+import logging
+logging.warning('Test Warning #####')
 
 vendors = ['juniper', 'cisco', 'arista', 'citrix', 'NGINX', 'timetra']
 
