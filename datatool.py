@@ -3,6 +3,8 @@
 # "Data Wrangling with Python"
 
 from decimal import getcontext, Decimal
+import logging
+logging.warning('Test Warning #####')
 
 a = .1
 b = .204
