@@ -4,7 +4,8 @@
 import socket
 import os
 import logging
-logging.warning('Test Warning #####')
+#   logging.warning('Test Warning #####')
+
 
 size = 1500
 host = ''
