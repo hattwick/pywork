@@ -9,15 +9,14 @@ import csv
 
 # Get input file and validate input file
 file = input('Type filename and press ENTER: ')
+# print('Filename read as:', file)
 exists = os.path.isfile(file)
+print(exists)
+assert isinstance(exists, object)
 if exists:
-    print(file, "located at ")
-#    fulldata = pd.read_csv(file)
-    csvfile = open(file, 'rb')
-    fulldata = csv.reader(csvfile)
-
-    print("Total rows found: {0}".format(len(fulldata), " Starting job"))
-    print(fulldata)
-    csvfile.close()
+    with open(file) as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            print(row)
 else:
-    print(exists)
+    print('File not found')
