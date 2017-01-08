@@ -9,7 +9,7 @@ import socket
 
 
 # Get input file and validate input file
-file = input('Type filename "in quotes" and press ENTER: ')
+file = input('Type filename potentially "in quotes" and press ENTER: ')
 exists = os.path.isfile(file)
 print('Filename read as:', file, ' and found is ', exists)
 
