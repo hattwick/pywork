@@ -9,17 +9,29 @@ import socket
 
 
 # Get input file and validate input file
-file = input('Type filename and press ENTER: ')
+file = input('Type filename "in quotes" and press ENTER: ')
 exists = os.path.isfile(file)
 print('Filename read as:', file, ' and found is ', exists)
 
-assert isinstance(exists, object)
+#  assert isinstance(exists, object)
+
+iplist = []    # initialize empty list
 if exists:
 	with open(file) as csvfile:
 		reader = csv.DictReader(csvfile)
 		for row in reader:
 			record = row
-			print(record['Name'])
-			print("Row complete")
+			try:
+				ip = socket.gethostbyname(record['Name'])
+			except:
+				print("Lookup failed for", ip)
+				continue
+			print(record['Name'], ip)
+			iplist.append(ip)
+
 else:
 	print('File not found')
+
+print("Job complete")
+
+print("Unsorted IPs", iplist)
