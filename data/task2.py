@@ -28,6 +28,7 @@ def get_stock_info(stock, start, end, source='yahoo'):
 from task1 import get_stock_info
 from datetime import dateime
 res = get_stock_info.delay('__ticker_symbol__', datetime(2017, 1, 1), datetime.today())
+or specify queue: res = get_stock_info.apply_async(('__ticker_symbol__', datetime(2017, 1, 1), datetime.today()), queue = 'priority')
 
 >> results will appear in worker console or log
 '''
