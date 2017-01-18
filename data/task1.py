@@ -21,6 +21,7 @@ def get_stock_info(stock, start, end, source='yahoo'):
 
 # -30- End of task
 
+
 '''Can test in REPL with or just run using main below
 from task1 import get_stock_info
 from datetime import dateime
@@ -33,4 +34,3 @@ def main():
 	print(result)
 
 if __name__ == "__main__": main()
-
