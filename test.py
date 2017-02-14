@@ -1,5 +1,6 @@
 # testing various functions in small form, some 2.x, some 3.x
 # samples and variations copied or inspired by No Starch Press
+# Random collection of routines
 # Automate the Boring Stuff with Python.  Runs in both Python2.7 and 3.5
 
 import pprint
