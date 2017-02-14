@@ -25,6 +25,10 @@ elif int(x) > 10:
 else:
     print("low range")
 
+def getAge():
+    myAge = input("What is your age?: ")
+    myAgeInt = int(myAge)
+    return myAgeInt
 
 # Now we will get some personal information
 
@@ -42,9 +46,9 @@ print('\nNice to meet you, ' + myName)
 print('The length of your name is:')
 print(len(myName))
 
-print('\nWhat is your age?')
-myAge = input()
-print('You will be ' + str(int(myAge)+1) + ' in a year.')
+# print('\nWhat is your age?')
+nextAge = getAge()+1
+print('You will be {} in a year.'.format(nextAge))
 
 print()
 print('Finished')
