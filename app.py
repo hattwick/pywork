@@ -12,11 +12,13 @@ def day_of_month():
 	return day
 
 def burndown(budget, day):
-	return budget - ((budget/30) * day)
+	committed = budget - ((budget/30) * day)
+	print(committed)
+	return committed
 
 def run():
 	budget=get_budget()
-	day=day_of_month()10
+	day=day_of_month()
 	print("You should have spent $".format(burndown(budget, day)))
 
 
