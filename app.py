@@ -1,5 +1,4 @@
-# experimenting with nesting functions
-
+# Nested budget/expense functions
 
 def get_budget():
 	budget_string = input("What is your allocation for this month: ")
